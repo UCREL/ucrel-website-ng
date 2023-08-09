@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en-US">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+       <title>UCREL NLP Group</title>
+  <!-- Favicons -- We recommend this site for generating favicons: https://www.favicon-generator.org/ -->
+  <link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="favicons/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="favicons/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="favicons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="favicons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="favicons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="favicons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="512x512"  href="favicons/android-chrome-512x512.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicons/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="favicons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+	   
+	   
+      <link rel="stylesheet" href="css/components.css">
+      <link rel="stylesheet" href="css/icons.css">
+      <link rel="stylesheet" href="css/responsee.css">
+      <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+      <link rel="stylesheet" href="owl-carousel/owl.theme.css">
+      <!-- CUSTOM STYLE -->      
+      <link rel="stylesheet" href="css/template-style.css">
+      <link href="https://fonts.googleapis.com/css?family=Barlow:100,300,400,700,800&amp;subset=latin-ext" rel="stylesheet">  
+      <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+      <script type="text/javascript" src="js/jquery-ui.min.js"></script>   
+   
+    </style>
+	   
+	</head>
+
+<!-- HEADER -->
+      <header class="grid">
+        <!-- Top Navigation -->
+        <nav class="s-12 grid background-red background-primary-hightlight">
+           <!-- logo -->
+
+           
+           <div class="top-nav s-12 l-9">
+			    <ul class="top-ul left chevron">
+                <li> <a href="index.html">Home</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="projects.html">Research</a></li>
+				<li><a href="phd.html">PhD</a></li>
+<!--				<li><a href="research.html">Research</a></li>-->
+				<li><a href="resources.html">Resources</a></li>
+				<li><a href="tools.html">Tools</a></li>
+<!--				<li><a href="news.html">News</a></li>-->
+                <li><a href="contact.html">Contact</a></li>
+             </ul>
+      <!-- ... (rest of your code) ... -->
+  
+			   
+          </div>
+        </nav>
+
+		<script>
+    function setBackgroundColor(backgroundColor, textColor) {
+        document.body.style.backgroundColor = backgroundColor;
+        document.body.style.color = textColor;
+    }
+</script>
+	
+      </header>
+	  
+	  
+
+
+
+   <body class="size-1520 primary-color-red background-dark">
+    
+      
+	       <!-- The JavaScript code to tuggle background light/dark -->
+  <script>
+    function toggleBackground() {
+        var body = document.body;
+        var currentClass = body.className;
+        var pElements = document.getElementsByTagName('p');
+        var headingElements = [];
+
+        // Get all heading elements (h1, h2, h3, h4, etc.)
+        for (var i = 1; i <= 2; i++) {
+            headingElements = headingElements.concat(Array.from(document.getElementsByTagName('h' + i)));
+        }
+
+        if (currentClass.includes("background-dark")) {
+            body.className = currentClass.replace("background-dark", "background-light");
+            body.style.backgroundColor = "#f0f0f0";
+            body.style.color = "#333";
+
+            for (var i = 0; i < pElements.length; i++) {
+                pElements[i].classList.replace("text-white", "text-dark");
+                pElements[i].style.color = "#f0f0f0";
+            }
+
+            for (var i = 0; i < headingElements.length; i++) {
+                headingElements[i].classList.replace("text-white", "text-dark");
+                headingElements[i].style.color = "#f0f0f0";
+            }
+        } else if (currentClass.includes("background-light")) {
+            body.className = currentClass.replace("background-light", "background-dark");
+            body.style.backgroundColor = "#333";
+            body.style.color = "#fff";
+
+  
+
+            for (var i = 0; i < headingElements.length; i++) {
+                headingElements[i].classList.replace("text-dark", "text-white");
+                headingElements[i].style.color = "#333";
+            }
+        }
+    }
+</script>
+
+	   
+      <!-- MAIN -->
+      <main role="main">
+        <!-- TOP SECTION -->
+        <header class="grid">
+      <div class="logo s-4 l-3"> <!-- Decreased the size of the logo for both small and large screens -->
+      <a href="index.html">
+      <img src="img/ucrel_logo_2021.png" alt="Logo" style="max-width: 170px; max-height: 110px;">
+      </a>
+	 <button onclick="toggleBackground()">Dark/Light</button>
+      </div>
+        		<div class="s-12 padding-2x">
+            	<h1 class="text-strong text-white text-center center text-size-60 text-uppercase margin-bottom-20">About Us</h1>
+				<h2 class="text-size-20 text-white text-center center">We are a dynamic and diverse group of 6 academics, along with over 20 dedicated researchers and PhD students, passionately engaged in exploring various Natural Language Processing (NLP) related topics across multiple languages.</h2>
+          </div>
+        </header>
+  
+        
+        <!-- SECTION 1 -->
+        <section class="grid"> <!-- Image-->
+        </section>
+        
+        <!-- SECTION 2 -->
+        <section class="grid margin margin-bottom padding-2x background-primary">
+          <div class="s-12 m-6 l-3">
+            <span class="timer text-size-50 text-white text-strong">35</span>
+            <h3 class="text-uppercase text-strong">Group Members</h3>
+            <p class="text-size-16 margin-m-bottom-20">With a rich blend of expertise from diverse departments and disciplines, including Computing, Finance, Linguistics, and Health and Medicine, our group comprises 35 enthusiastic members collaborating on cutting-edge Natural Language Processing (NLP) research and applications.</p> 
+          </div>
+
+          <div class="s-12 m-6 l-3">
+            <span class="timer text-size-50 text-white text-strong">20</span> <span class="text-size-50 text-white text-strong">&nbsp;</span>
+            <h3 class="text-uppercase text-strong">Languages</h3>
+            <p class="text-size-16 margin-m-bottom-20">Our extensive research endeavors encompass an impressive array of 20 languages from different corners of the world, spanning across Asian, African, European, and Middle Eastern regions. We are committed to unraveling the intricacies of language through Natural Language Processing (NLP) to foster cross-cultural understanding and global impact.</p> 
+          </div>
+
+          <div class="s-12 m-6 l-3">
+            <span class="timer text-size-50 text-white text-strong">1.6k</span>
+            <h3 class="text-uppercase text-strong">Research Output</h3>
+            <p class="text-size-16 margin-m-bottom-20">With an unwavering commitment to excellence, our esteemed academic team has collectively published over 1600 papers across diverse multidisciplinary fields, solidifying our position as leading contributors in the realm of Natural Language Processing (NLP) research.</p> 
+          </div>
+
+          <div class="s-12 m-6 l-3">
+            <span class="timer text-size-50 text-white text-strong">23k&nbsp;</span> <span class="text-size-50 text-white text-strong">&nbsp;</span>
+            <h3 class="text-uppercase text-strong">Google Scholar Citations</h3>
+            <p class="text-size-16 margin-m-bottom-20">Furthermore, our academic team's groundbreaking research has garnered substantial recognition, amassing over 23,000 Google Scholar citations, a testament to the significant influence and relevance of our contributions in the field of Natural Language Processing (NLP).</p> 
+          </div>
+        </section>
+        
+        <!-- SECTION 3 -->
+        <section class="grid margin">
+          <h2 class="s-12 text-white text-thin text-size-30 text-white text-uppercase margin-top-bottom-20 center text-center">Our <b>UCREL NLP Academic Team</b></h2> 
+          <div class="s-12 m-6 l-2 margin-bottom">
+            <img src="img/team-01.jpg"/>
+            <h4 class="background-primary padding text-strong"><a href="https://www.lancaster.ac.uk/staff/rayson/">Professor Paul Rayson</a></h4>
+            <p class="margin-bottom-10 text-primary text-uppercase">UCREL Director&nbsp;</p>
+            <p class="margin-bottom-10 text-primary text-uppercase">&nbsp;Professor in NLP</p>
+          </div>
+          <div class="s-12 m-6 l-2 margin-bottom">
+            <img src="img/team-02.jpg"/>
+            <h4 class="background-primary padding text-strong"><a href="https://www.lancaster.ac.uk/staff/elhaj/index.html">Dr Mo El-Haj&nbsp;</a></h4>
+            <p class="margin-bottom-10 text-primary text-uppercase">UCREL Co-DirectoR&nbsp;&nbsp;</p>
+            <p class="margin-bottom-10 text-primary text-uppercase">Senior Lecturer in NLP&nbsp; &nbsp; &nbsp;</p>
+          </div>
+          <div class="s-12 m-6 l-2 margin-bottom"> 
+            <img src="img/team-03.jpg"/>
+            <h4 class="background-primary padding text-strong"><a href="https://www.lancaster.ac.uk/scc/about-us/people/alistair-baron">Dr Alistair Baron</a></h4>
+            <p class="margin-bottom-10 text-primary text-uppercase">UCREL Co-Director</p>
+            <p class="margin-bottom-10 text-primary text-uppercase">Senior Lecturer&nbsp; n NLP</p>
+          </div>
+          <div class="s-12 m-6 l-2 margin-bottom"> 
+            <img src="img/saad2.jpg"/>
+            <h4 class="background-primary padding text-strong"><a href="https://scholar.google.com/citations?user=48ebm6wAAAAJ&hl=en">Dr Saad Ezzini</a></h4>
+            <p class="margin-bottom-10 text-primary text-uppercase">Lecturer in NLP and SE</p>                                                                                                                                          
+          </div>
+          <div class="s-12 m-6 l-2 margin-bottom"> 
+            <img src="img/team-05.jpg"/>
+            <h4 class="background-primary padding text-strong"><a href="https://www.lancaster.ac.uk/scc/about-us/people/scott-piao">Dr Scott Piao</a></h4>
+            <p class="margin-bottom-10 text-primary text-uppercase">Lecturer in NLP (BJTU)</p>                                                                                                                                          
+          </div>
+          <div class="s-12 m-6 l-2 margin-bottom"> 
+            <img src="img/ruslan.jpg"/>
+            <h4 class="background-primary padding text-strong"><a href="https://scholar.google.co.uk/citations?user=9QVtDQoAAAAJ&hl=en">Professor Ruslan Mitkov&nbsp;&nbsp;</a></h4>
+            <p class="margin-bottom-10 text-primary text-uppercase">Chair in NLP &amp; Cyber Security</p>                                                                                                                                          
+          </div>   
+        </section>
+        
+		  
+		   <!-- SECTION 3 -->
+        <section class="grid margin">
+          <h2 class="s-12 text-white text-thin text-size-30 text-white text-uppercase margin-top-bottom-20 center text-center">Our <b>UCREL NLP Research Team</b></h2> 
+          <div class="s-12 m-6 l-2 margin-bottom">
+            <img src="img/team-04.jpg"/>
+            <h4 class="background-primary padding text-strong"><a href="https://www.lancaster.ac.uk/scc/about-us/people/ignatius-ezeani">Dr Ignatius Ezeani</a></h4>
+            <p class="margin-bottom-10 text-primary text-uppercase">&nbsp;Senior Research Associate</p>
+          </div>
+          <div class="s-12 m-6 l-2 margin-bottom">
+            <img src="img/daisy.jpg"/>
+            <h4 class="background-primary padding text-strong"><a href="https://scholar.google.com/citations?user=gFMQeOkAAAAJ&hl=en">Dr Daisy Lal&nbsp;</a></h4>
+            <p class="margin-bottom-10 text-primary text-uppercase">Research Associate</p>
+          </div>
+          <div class="s-12 m-6 l-2 margin-bottom"> 
+            <img src="img/matt.jpg"/>
+            <h4 class="background-primary padding text-strong"><a href="https://www.lancaster.ac.uk/scc/about-us/people/matthew-coole">Dr Matthew Coole&nbsp;</a></h4>
+            <p class="margin-bottom-10 text-primary text-uppercase">Senior Research Associate</p>
+          </div>
+          <div class="s-12 m-6 l-2 margin-bottom"> 
+            <img src="img/vidler.jpg"/>
+            <h4 class="background-primary padding text-strong"><a href="https://www.lancaster.ac.uk/scc/about-us/people/john-vidler">Dr John Vidler</a></h4>
+            <p class="margin-bottom-10 text-primary text-uppercase">Senior Research Associate</p>                                                                                                                                          
+          </div>
+          <div class="s-12 m-6 l-2 margin-bottom"> 
+            <img src="img/chiamaka.jpg"/>
+            <h4 class="background-primary padding text-strong"><a href="https://www.lancaster.ac.uk/scc/about-us/people/chiamaka-chukwuneke">Chiamaka Chukwuneke</a></h4>
+            <p class="margin-bottom-10 text-primary text-uppercase">Research Assistant</p>                                                                                                                                          
+          </div>
+          <div class="s-12 m-6 l-2 margin-bottom"> 
+            <img src="img/nouran.jpg"/>
+            <h4 class="background-primary padding text-strong"><a href="https://www.lancaster.ac.uk/scc/about-us/people/nouran-khallaf">Dr Nouran Khallaf&nbsp;&nbsp;</a></h4>
+            <p class="margin-bottom-10 text-primary text-uppercase">Research Associate</p>                                                                                                                                          
+          </div>   
+        </section>
+		  
+		   <!-- SECTION 3 -->
+        <section class="grid margin">
+          <h2 class="s-12 text-white text-thin text-size-30 text-white text-uppercase margin-top-bottom-20 center text-center">Our <b>UCREL NLP PhD Students</b></h2> 
+          <div class="s-12 m-6 l-2 margin-bottom">
+            <img src="img/nadhem.jpg"/>
+            <h4 class="background-primary padding text-strong"><a href="https://www.lancaster.ac.uk/scc/about-us/people/nadhem-zmandar">Nadhem Zmandar</a></h4>
+            <p class="margin-bottom-10 text-primary text-uppercase">&nbsp;Financial Summarisation</p>
+          </div>
+         <div class="s-12 m-6 l-2 margin-bottom"> 
+            <img src="img/chiamaka.jpg"/>
+            <h4 class="background-primary padding text-strong"><a href="https://www.lancaster.ac.uk/scc/about-us/people/chiamaka-chukwuneke">Chiamaka Chukwuneke</a></h4>
+            <p class="margin-bottom-10 text-primary text-uppercase">Igbo NER</p>
+	      </div>
+          <div class="s-12 m-6 l-2 margin-bottom"> 
+            <img src="img/jesse.jpg"/>
+            <h4 class="background-primary padding text-strong"><a href="https://www.lancaster.ac.uk/dsi/about-us/members/jesse-phillips">Jesse Phillips</a></h4>
+            <p class="margin-bottom-10 text-primary text-uppercase">Code Summarisation</p>
+          </div>
+          <div class="s-12 m-6 l-2 margin-bottom"> 
+            <img src="img/mander.jpg"/>
+            <h4 class="background-primary padding text-strong"><a href="https://www.lancaster.ac.uk/scc/about-us/people/stephen-mander">Steven Mander</a></h4>
+            <p class="margin-bottom-10 text-primary text-uppercase">ML techniques for NLP</p>                                                                                                     
+			  
+          </div>
+			 <div class="s-12 m-6 l-2 margin-bottom">
+            <img src="img/harvey.jpg"/>
+            <h4 class="background-primary padding text-strong"><a href="https://uk.linkedin.com/in/daisy-harvey-502bb1140">Daisy Harvey</a></h4>
+            <p class="margin-bottom-10 text-primary text-uppercase">&nbsp;Mental Health NLP</p>
+          </div>
+         <div class="s-12 m-6 l-2 margin-bottom"> 
+            <img src="img/glorianna.jpg"/>
+            <h4 class="background-primary padding text-strong"><a href="https://www.lancaster.ac.uk/health-and-medicine/about-us/people/glorianna-jagfeld">Glorianna Jagfeld</a></h4>
+            <p class="margin-bottom-10 text-primary text-uppercase">Mental Health NLP</p>
+	      </div> 
+			        </section>
+
+			  <!-- SECTION 3 -->
+        <section class="grid margin">
+			
+			
+          <div class="s-12 m-6 l-2 margin-bottom"> 
+            <img src="img/noprofile.jpg"/>
+            <h4 class="background-primary padding text-strong"><a href="https://www.lancaster.ac.uk/scc/about-us/people/ratchakrit-arreerard">Ratchakrit Arreerard</a></h4>
+            <p class="margin-bottom-10 text-primary text-uppercase">MENTAL HEALTH NLP</p>
+          </div>
+         
+
+          <div class="s-12 m-6 l-2 margin-bottom"> 
+            <img src="img/noprofile.jpg"/>
+            <h4 class="background-primary padding text-strong"><a href="https://www.lancaster.ac.uk/scc/about-us/people/mansour-almansour">Mansour Almansour</a></h4>
+            <p class="margin-bottom-10 text-primary text-uppercase">Recommendation Systems</p>                                                                                                                                          
+          </div>
+          <div class="s-12 m-6 l-2 margin-bottom"> 
+            <img src="img/noprofile.jpg"/>
+            <h4 class="background-primary padding text-strong"><a href="https://www.lancaster.ac.uk/scc/about-us/people/israa-alsiyat">Israa Alsiyat</a></h4>
+            <p class="margin-bottom-10 text-primary text-uppercase">Sentiment Analysis</p>                                                                                                                                          
+          </div>  
+        </section>
+		  
+		  	 
+      <!-- MAIN -->
+
+        
+        <!-- SECTION 1 -->
+        <section class="grid">
+          <div class="m-12 l-6 padding-2x background-white">
+                <h2 class="s-12 text-white text-thin text-size-30 text-red text-uppercase margin-top-bottom-20 center text-center">UCREL NLP&nbsp; <b>PhD Alumni</b></h2> 
+
+            
+	<ul>
+  <li>Dr Lama Asudias</li>
+  <li>Dr Matthew Coole</li>
+  <li>Dr Andrew Moore</li>
+  <li>Dr Edward Durden</li>
+  <li>Dr Alistair Baron</li>
+  <li>Dr Matt Edwards</li>
+  <li>Dr Muhammed Sharjeel</li>
+  <li>Dr Eddie Bell</li>
+  <li>Dr Stephen Wattam</li>
+  <li>Dr Laura Löfberg</li>		
+  <li>Dr Jawad Shafi</li>		
+  <li>Dr John Vidler</li>		
+  <li>Dr Alex Reinhold</li>		
+  <li>Dr Katharina Maclnnes</li>		
+  <li>Dr Sheryl Prentice</li>		
+  <li>Dr Patrick Tschorn</li>		
+  
+</ul>
+  </div>
+          
+        </section>
+
+      </main>
+      
+<div id="footer-container"></div>
+
+    <script>
+        // Fetch the content of header.html using JavaScript
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(content => {
+                // Add the content to the header-container div
+                document.getElementById('footer-container').innerHTML = content;
+            })
+            .catch(error => {
+                console.error('Error fetching footer.html:', error);
+            });
+    </script>
+	   
+	   
+	  <script type="text/javascript" src="js/responsee.js"></script>
+      <script type="text/javascript" src="owl-carousel/owl.carousel.js"></script>
+      <script type="text/javascript" src="js/template-scripts.js"></script>
+   </body>
+</html>

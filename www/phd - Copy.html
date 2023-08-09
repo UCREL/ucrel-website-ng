@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en-US">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+       <title>UCREL NLP Group</title>
+      <link rel="stylesheet" href="css/components.css">
+      <link rel="stylesheet" href="css/icons.css">
+      <link rel="stylesheet" href="css/responsee.css">
+      <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+      <link rel="stylesheet" href="owl-carousel/owl.theme.css">
+      <!-- CUSTOM STYLE -->      
+      <link rel="stylesheet" href="css/template-style.css">
+      <link href="https://fonts.googleapis.com/css?family=Barlow:100,300,400,700,800&amp;subset=latin-ext" rel="stylesheet">  
+      <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+      <script type="text/javascript" src="js/jquery-ui.min.js"></script>    
+   </head>
+
+   <!--
+    You can change the color scheme of the page. Just change the class of the <body> tag. 
+    You can use this class: "primary-color-white", "primary-color-red", "primary-color-orange", "primary-color-blue", "primary-color-aqua", "primary-color-dark" 
+    -->
+    
+    <!--
+    Each element is able to have its own background or text color. Just change the class of the element.  
+    You can use this class: 
+    "background-white", "background-red", "background-orange", "background-blue", "background-aqua", "background-primary" 
+    "text-white", "text-red", "text-orange", "text-blue", "text-aqua", "text-primary"
+    -->
+
+   <body class="size-1520 primary-color-red background-dark">
+      <!-- HEADER -->
+<div id="header-container"></div>
+
+    <script>
+        // Fetch the content of header.html using JavaScript
+        fetch('header.html')
+            .then(response => response.text())
+            .then(content => {
+                // Add the content to the header-container div
+                document.getElementById('header-container').innerHTML = content;
+            })
+            .catch(error => {
+                console.error('Error fetching header.html:', error);
+            });
+    </script>
+      
+	    <!--
+    You can change the color scheme of the page. Just change the class of the <body> tag. 
+    You can use this class: "primary-color-white", "primary-color-red", "primary-color-orange", "primary-color-blue", "primary-color-aqua", "primary-color-dark" 
+    -->
+    
+    <!--
+    Each element is able to have its own background or text color. Just change the class of the element.  
+    You can use this class: 
+    "background-white", "background-red", "background-orange", "background-blue", "background-aqua", "background-primary" 
+    "text-white", "text-red", "text-orange", "text-blue", "text-aqua", "text-primary"
+    -->
+
+
+    <script>
+        // Fetch the content of header.html using JavaScript
+        fetch('header.html')
+            .then(response => response.text())
+            .then(content => {
+                // Add the content to the header-container div
+                document.getElementById('header-container').innerHTML = content;
+            })
+            .catch(error => {
+                console.error('Error fetching header.html:', error);
+            });
+    </script>
+      
+	       <!-- The JavaScript code to tuggle background light/dark -->
+   <!-- The JavaScript code to tuggle background light/dark -->
+  <script>
+    function toggleBackground() {
+        var body = document.body;
+        var currentClass = body.className;
+        var pElements = document.getElementsByTagName('p');
+        var headingElements = [];
+
+        // Get all heading elements (h1, h2, h3, h4, etc.)
+        for (var i = 1; i <= 2; i++) {
+            headingElements = headingElements.concat(Array.from(document.getElementsByTagName('h' + i)));
+        }
+
+        if (currentClass.includes("background-dark")) {
+            body.className = currentClass.replace("background-dark", "background-light");
+            body.style.backgroundColor = "#f0f0f0";
+            body.style.color = "#333";
+
+            for (var i = 0; i < pElements.length; i++) {
+                pElements[i].classList.replace("text-white", "text-dark");
+                pElements[i].style.color = "#f0f0f0";
+            }
+
+            for (var i = 0; i < headingElements.length; i++) {
+                headingElements[i].classList.replace("text-white", "text-dark");
+                headingElements[i].style.color = "#f0f0f0";
+            }
+        } else if (currentClass.includes("background-light")) {
+            body.className = currentClass.replace("background-light", "background-dark");
+            body.style.backgroundColor = "#333";
+            body.style.color = "#fff";
+
+  
+
+            for (var i = 0; i < headingElements.length; i++) {
+                headingElements[i].classList.replace("text-dark", "text-white");
+                headingElements[i].style.color = "#333";
+            }
+        }
+    }
+</script>
+	   
+      <!-- MAIN -->
+      <main role="main">
+        <!-- TOP SECTION -->
+        <header class="grid">
+        	<div class="s-12 padding-2x">
+            <h1 class="text-strong text-white text-center center text-size-60 text-uppercase margin-bottom-20">Ph at UCREL NLP</h1>
+            <h2 class="text-size-20 text-white text-center center ">Explore NLP PhD Opportunities at Lancaster University's School of Computing and Communications. Contact our NLP Group directly or connect with supervisors from the list below to delve into our diverse research topics..</h2>
+          </div>
+        </header>
+  
+        
+        <!-- SECTION 1 -->
+        <section class="grid">
+          <div class="m-12 l-6 padding-2x background-white">
+            <p class="text-strong text-size-80 text-red">Research Topics</p>
+            
+	<ul>
+  <li>Natural Language Processing (NLP)</li>
+  <li>Language Resources</li>
+  <li>Data Science</li>
+  <li>Health and Medicine</li>
+  <li>Biomedical NLP</li>
+  <li>Text Summarization</li>
+  <li>Corpus and Computational Linguistics</li>
+  <li>Financial NLP and FinTech</li>
+  <li>Machine Learning on Text Classification</li>
+  <li>Crowd-sourcing and Information Extraction</li>
+  <li>Contextual Disambiguation Methods</li>
+  <li>Automatic Semantic Annotation and WSD</li>
+  <li>Multilingual Semantic Tagging</li>
+  <li>Applications of NLP to Real-world Problems</li>
+  <li>Cyber Security</li>
+  <li>Deception and Multiple Personae Detection</li>
+  <li>Machine Learning Techniques</li>
+  <li>Text Mining</li>
+  <li>Social Computing</li>
+  <li>Big Data</li>
+  <li>Machine Translation</li>
+  <li>Translation Technology</li>
+  <li>Anaphoric Resolution</li>
+  <li>Deep Learning / Language Models NLP</li>
+  <li>Software Engineering with NLP</li>
+  <li>Multidisciplinary and Multilingual NLP</li>
+</ul>
+  </div>
+          
+          <!-- Image-->
+          <img class="m-12 l-6" src="img/img-06.jpg">
+        </section>
+        
+        <!-- SECTION 2 -->
+        <section class="grid">
+          <!-- Image-->        </section> 
+        
+        <!-- SECTION 3 -->
+        <section class="grid"> <!-- Image-->
+        </section> 
+        
+        <!-- SECTION 6 -->
+        <section class="grid margin-bottom">
+          <div class="s-12 padding-2x background-dark">
+            <a href="contact.html" class="s-12 m-9 l-3 center button text-size-20 text-white background-red">CONTACT US</a>
+          </div>
+        </section>      
+      </main>
+      
+<div id="footer-container"></div>
+
+    <script>
+        // Fetch the content of header.html using JavaScript
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(content => {
+                // Add the content to the header-container div
+                document.getElementById('footer-container').innerHTML = content;
+            })
+            .catch(error => {
+                console.error('Error fetching footer.html:', error);
+            });
+    </script>
+   </body>
+</html>

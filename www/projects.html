@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en-US">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+       <title>UCREL NLP Group</title>
+  <!-- Favicons -- We recommend this site for generating favicons: https://www.favicon-generator.org/ -->
+  <link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="favicons/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="favicons/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="favicons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="favicons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="favicons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="favicons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="512x512"  href="favicons/android-chrome-512x512.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicons/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="favicons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+	   
+	   
+      <link rel="stylesheet" href="css/components.css">
+      <link rel="stylesheet" href="css/icons.css">
+      <link rel="stylesheet" href="css/responsee.css">
+      <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+      <link rel="stylesheet" href="owl-carousel/owl.theme.css">
+      <!-- CUSTOM STYLE -->      
+      <link rel="stylesheet" href="css/template-style.css">
+      <link href="https://fonts.googleapis.com/css?family=Barlow:100,300,400,700,800&amp;subset=latin-ext" rel="stylesheet">  
+      <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+      <script type="text/javascript" src="js/jquery-ui.min.js"></script>   
+
+	   
+	   
+	       <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1.5fr);
+            gap: 20px;
+            padding: 20px;
+        }
+        .project-box {
+            background-color: indianred;
+            padding: 20px;
+            text-align: center;
+        }
+        .project-box h3 {
+            color: white;
+        }
+			   
+        .project-box h4 {
+            color: white;
+        }			   
+    </style>
+   </head>
+	
+<!-- HEADER -->
+      <header class="grid">
+        <!-- Top Navigation -->
+        <nav class="s-12 grid background-red background-primary-hightlight">
+           <!-- logo -->
+
+           
+           <div class="top-nav s-12 l-9">
+			    <ul class="top-ul left chevron">
+                <li> <a href="index.html">Home</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="projects.html">Research</a></li>
+				<li><a href="phd.html">PhD</a></li>
+<!--				<li><a href="research.html">Research</a></li>-->
+				<li><a href="resources.html">Resources</a></li>
+				<li><a href="tools.html">Tools</a></li>
+<!--				<li><a href="news.html">News</a></li>-->
+                <li><a href="contact.html">Contact</a></li>
+		
+					     
+
+             </ul>
+      <!-- ... (rest of your code) ... -->
+  
+			   
+          </div>
+        </nav>
+
+		<script>
+    function setBackgroundColor(backgroundColor, textColor) {
+        document.body.style.backgroundColor = backgroundColor;
+        document.body.style.color = textColor;
+    }
+</script>
+	
+      </header>
+	  
+	  
+
+
+
+   <body class="size-1520 primary-color-red background-dark">
+    
+        <!-- The JavaScript code to tuggle background light/dark -->
+  <script>
+    function toggleBackground() {
+        var body = document.body;
+        var currentClass = body.className;
+        var pElements = document.getElementsByTagName('p');
+        var headingElements = [];
+
+        // Get all heading elements (h1, h2, h3, h4, etc.)
+        for (var i = 1; i <= 2; i++) {
+            headingElements = headingElements.concat(Array.from(document.getElementsByTagName('h' + i)));
+        }
+
+        if (currentClass.includes("background-dark")) {
+            body.className = currentClass.replace("background-dark", "background-light");
+            body.style.backgroundColor = "#f0f0f0";
+            body.style.color = "#333";
+
+            for (var i = 0; i < pElements.length; i++) {
+                pElements[i].classList.replace("text-white", "text-dark");
+                pElements[i].style.color = "#f0f0f0";
+            }
+
+            for (var i = 0; i < headingElements.length; i++) {
+                headingElements[i].classList.replace("text-white", "text-dark");
+                headingElements[i].style.color = "#f0f0f0";
+            }
+        } else if (currentClass.includes("background-light")) {
+            body.className = currentClass.replace("background-light", "background-dark");
+            body.style.backgroundColor = "#333";
+            body.style.color = "#fff";
+
+  
+
+            for (var i = 0; i < headingElements.length; i++) {
+                headingElements[i].classList.replace("text-dark", "text-white");
+                headingElements[i].style.color = "#333";
+            }
+        }
+    }
+</script>
+      <!-- MAIN -->
+      <main role="main">
+        <!-- TOP SECTION -->
+        <header class="grid">
+        	<div class="logo s-4 l-3"> <!-- Decreased the size of the logo for both small and large screens -->
+      		<a href="index.html">
+        	<img src="img/ucrel_logo_2021.png" alt="Logo" style="max-width: 170px; max-height: 110px;">
+      		</a>
+			<button onclick="toggleBackground()">Dark/Light</button>
+    		</div>
+			<div class="s-12 padding-2x">
+            <h1 class="text-strong text-white text-center center text-size-60 text-uppercase margin-bottom-20">Research Projects</h1>
+            <h2 class="text-size-20 text-white text-center center">Below is a list of UCREL NLP current and previous research projects</h2>
+    
+			
+			
+			<div class="grid-container">
+    <!-- Row 1 -->
+    <div class="project-box" id="box1">
+        <a href="#">
+            <h3>FreeTxt</h3>
+            <h4>2022 - Current</h4>
+        </a>
+    </div>
+    <div class="project-box" id="box2">
+        <a href="#">
+            <h3>CARE - -Financial NLP</h3>
+            <h4>2022 - Current</h4>
+        </a>
+    </div>
+    <div class="project-box" id="box3">
+        <a href="#">
+            <h3>Geospatial Innovation</h3>
+            <h4>2022 - Current</h4>
+        </a>
+    </div>
+    <div class="project-box" id="box4">
+        <a href="#">
+            <h3>Thesawrws</h3>
+            <h4>2022 - 2023</h4>
+        </a>
+    </div>
+    <div class="project-box" id="box5">
+        <a href="#">
+            <h3>iPOF</h3>
+            <h4>2022 - 2023</h4>
+        </a>
+    </div>
+				
+				 <!-- Row 1 -->
+    <div class="project-box" id="box6">
+        <a href="#">
+            <h3>SBE-UKRI</h3>
+            <h4>2019 - 2022</h4>
+        </a>
+    </div>
+    <div class="project-box" id="box7">
+        <a href="#">
+            <h3>Understanding Corporate Communications</h3>
+            <h4>2015 - 2016</h4>
+        </a>
+    </div>
+    <div class="project-box" id="box8">
+        <a href="#">
+            <h3>AraSAS</h3>
+            <h4>2020 - 2022</h4>
+        </a>
+    </div>
+    <div class="project-box" id="box9">
+        <a href="#">
+            <h3>CLARA-Fin</h3>
+            <h4>2021 - 2024</h4>
+        </a>
+    </div>
+    <div class="project-box" id="box10">
+        <a href="#">
+            <h3>FinT-esp</h3>
+            <h4>2018 - 2021</h4>
+        </a>
+    </div>
+				
+				 <!-- Row 1 -->
+    <div class="project-box" id="box11">
+        <a href="#">
+            <h3>IFRS15 Analysis</h3>
+            <h4>2020 - 2022</h4>
+        </a>
+    </div>
+    <div class="project-box" id="box12">
+        <a href="https://ucrel.lancs.ac.uk/cfie/">
+            <h3>CFIE</h3>
+            <h4>2012 - 2020</h4>
+        </a>
+    </div>
+
+    <div class="project-box" id="box14">
+    <a href="#">
+        <h3>SenseSourcing</h3>
+        <h4>2014 - 2015</h4>
+    </a>
+</div>
+    <div class="project-box" id="box15">
+        <a href="https://ucrel.lancs.ac.uk/vard/about/">
+            <h3>Vard</h3>
+            <h4>2013 - 2015</h4>
+        </a>
+    </div>
+</div>
+      </div>
+<!-- Rest of your content -->
+
+
+        </header>
+      
+        <section class="grid margin"> </section>
+        
+      </main>
+     
+	  
+<div id="footer-container"></div>
+
+    <script>
+        // Fetch the content of header.html using JavaScript
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(content => {
+                // Add the content to the header-container div
+                document.getElementById('footer-container').innerHTML = content;
+            })
+            .catch(error => {
+                console.error('Error fetching footer.html:', error);
+            });
+    </script>
+   </body>
+	  <script type="text/javascript" src="js/responsee.js"></script>
+      <script type="text/javascript" src="owl-carousel/owl.carousel.js"></script>
+      <script type="text/javascript" src="js/template-scripts.js"></script>
+	
+</html>

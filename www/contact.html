@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en-US">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+       <title>UCREL NLP Group</title>
+  <!-- Favicons -- We recommend this site for generating favicons: https://www.favicon-generator.org/ -->
+  <link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="favicons/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="favicons/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="favicons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="favicons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="favicons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="favicons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="512x512"  href="favicons/android-chrome-512x512.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicons/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="favicons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+	   
+	   
+      <link rel="stylesheet" href="css/components.css">
+      <link rel="stylesheet" href="css/icons.css">
+      <link rel="stylesheet" href="css/responsee.css">
+      <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+      <link rel="stylesheet" href="owl-carousel/owl.theme.css">
+      <!-- CUSTOM STYLE -->      
+      <link rel="stylesheet" href="css/template-style.css">
+      <link href="https://fonts.googleapis.com/css?family=Barlow:100,300,400,700,800&amp;subset=latin-ext" rel="stylesheet">  
+      <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+      <script type="text/javascript" src="js/jquery-ui.min.js"></script>   
+   
+		   
+	</head>
+
+<!-- HEADER -->
+      <header class="grid">
+        <!-- Top Navigation -->
+        <nav class="s-12 grid background-red background-primary-hightlight">
+           <!-- logo -->
+
+           
+           <div class="top-nav s-12 l-9">
+			    <ul class="top-ul left chevron">
+                <li> <a href="index.html">Home</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="projects.html">Research</a></li>
+				<li><a href="phd.html">PhD</a></li>
+<!--				<li><a href="research.html">Research</a></li>-->
+				<li><a href="resources.html">Resources</a></li>
+				<li><a href="tools.html">Tools</a></li>
+<!--				<li><a href="news.html">News</a></li>-->
+                <li><a href="contact.html">Contact</a></li>
+
+             </ul>
+      <!-- ... (rest of your code) ... -->
+  
+			   
+          </div>
+        </nav>
+
+		<script>
+    function setBackgroundColor(backgroundColor, textColor) {
+        document.body.style.backgroundColor = backgroundColor;
+        document.body.style.color = textColor;
+    }
+</script>
+	
+      </header>
+	  
+	  
+
+
+
+   <body class="size-1520 primary-color-red background-dark">
+    
+	  <!--
+    You can change the color scheme of the page. Just change the class of the <body> tag. 
+    You can use this class: "primary-color-white", "primary-color-red", "primary-color-orange", "primary-color-blue", "primary-color-aqua", "primary-color-dark" 
+    -->
+    
+    <!--
+    Each element is able to have its own background or text color. Just change the class of the element.  
+    You can use this class: 
+    "background-white", "background-red", "background-orange", "background-blue", "background-aqua", "background-primary" 
+    "text-white", "text-red", "text-orange", "text-blue", "text-aqua", "text-primary"
+    -->
+      <!-- HEADER -->
+     
+	       <!-- The JavaScript code to tuggle background light/dark -->
+         <!-- The JavaScript code to tuggle background light/dark -->
+  <script>
+    function toggleBackground() {
+        var body = document.body;
+        var currentClass = body.className;
+        var headingElements = [];
+
+        // Get all heading elements (h1, h2, h3, h4, etc.)
+        for (var i = 1; i <= 1; i++) {
+            headingElements = headingElements.concat(Array.from(document.getElementsByTagName('h' + i)));
+        }
+
+        if (currentClass.includes("background-dark")) {
+            body.className = currentClass.replace("background-dark", "background-light");
+            body.style.backgroundColor = "#f0f0f0";
+            body.style.color = "#333";
+
+  
+
+            for (var i = 0; i < headingElements.length; i++) {
+                headingElements[i].classList.replace("text-white", "text-dark");
+                headingElements[i].style.color = "#f0f0f0";
+            }
+        } else if (currentClass.includes("background-light")) {
+            body.className = currentClass.replace("background-light", "background-dark");
+            body.style.backgroundColor = "#333";
+            body.style.color = "#fff";
+
+  
+
+            for (var i = 0; i < headingElements.length; i++) {
+                headingElements[i].classList.replace("text-dark", "text-white");
+                headingElements[i].style.color = "#333";
+            }
+        }
+    }
+</script>
+
+	 
+      <!-- MAIN -->
+      <main role="main">
+        <!-- TOP SECTION -->
+        <header class="grid">
+			<div class="logo s-4 l-3"> <!-- Decreased the size of the logo for both small and large screens -->
+      		<a href="index.html">
+        	<img src="img/ucrel_logo_2021.png" alt="Logo" style="max-width: 170px; max-height: 110px;">
+      		</a>
+			 <button onclick="toggleBackground()">Dark/Light</button>
+    		</div>
+			<div class="s-12 padding-2x">
+            <h1 class="text-strong text-white text-center center text-size-60 text-uppercase margin-bottom-20">Contact Us</h1>
+          </div>
+        </header>
+        
+        <!-- SECTION 1 -->
+        <section class="grid margin-bottom-20">
+          <div class="m-12 l-7 center">
+            <!-- Contact Information-->
+            <div class="s-12 padding-2x background-white text-center">                  
+              <h2 class="text-size-20 margin-bottom-10 text-strong text-uppercase text-dark">UCREL NLP Group Address</h2>                
+              <p>South Drive, InfoLab21,</p>
+              <p>School of Computing and Communications&nbsp;</p>
+              <p>Lancaster University</p>
+              <p>Lancaster, LA1 4WA, United Kingdom&nbsp;&nbsp;</p>
+<h2 class="text-size-20 margin-top-30 margin-bottom-10 text-strong text-uppercase text-dark">E-mail</h2>                
+              <p><a href="mailto:ucrel@lancaster.ac.uk">ucrel@lancaster.ac.uk</a></p>
+<h2 class="text-size-20 margin-top-30 margin-bottom-10 text-strong text-uppercase text-dark">Phone Numbers</h2>                
+              <p>+44 1524 510357</p>
+</div>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1417.2854317664003!2d-2.7851622702811674!3d54.00538371627075!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487b6303c7b5b1b7%3A0xb55da8da66c2bc80!2sInfolab!5e1!3m2!1sen!2suk!4v1690896822386!5m2!1sen!2suk" width="887" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>                  
+
+        </section>
+      </main>
+      
+<div id="footer-container"></div>
+
+    <script>
+        // Fetch the content of header.html using JavaScript
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(content => {
+                // Add the content to the header-container div
+                document.getElementById('footer-container').innerHTML = content;
+            })
+            .catch(error => {
+                console.error('Error fetching footer.html:', error);
+            });
+    </script>
+   </body>
+	
+		  <script type="text/javascript" src="js/responsee.js"></script>
+      <script type="text/javascript" src="owl-carousel/owl.carousel.js"></script>
+      <script type="text/javascript" src="js/template-scripts.js"></script>
+	
+	
+</html>

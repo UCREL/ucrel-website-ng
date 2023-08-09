@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en-US">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+       <title>UCREL NLP Group</title>
+  <!-- Favicons -- We recommend this site for generating favicons: https://www.favicon-generator.org/ -->
+  <link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="favicons/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="favicons/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="favicons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="favicons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="favicons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="favicons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="512x512"  href="favicons/android-chrome-512x512.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicons/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="favicons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+	   
+	   
+      <link rel="stylesheet" href="css/components.css">
+      <link rel="stylesheet" href="css/icons.css">
+      <link rel="stylesheet" href="css/responsee.css">
+      <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+      <link rel="stylesheet" href="owl-carousel/owl.theme.css">
+      <!-- CUSTOM STYLE -->      
+      <link rel="stylesheet" href="css/template-style.css">
+      <link href="https://fonts.googleapis.com/css?family=Barlow:100,300,400,700,800&amp;subset=latin-ext" rel="stylesheet">  
+      <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+      <script type="text/javascript" src="js/jquery-ui.min.js"></script>   
+	   
+	     <style>
+        /* Add your existing CSS styles here */
+        
+        .button-container {
+            position: fixed;
+            top: 0px; /* Adjust the top value to set the vertical position */
+            right: 124px; /* Adjust the right value to set the horizontal position */
+            z-index: 999; /* To make sure it stays on top of other elements */
+        }
+
+        /* Add any other necessary styles for the button */
+    </style>
+	   
+   </head>
+
+   <!--
+    You can change the color scheme of the page. Just change the class of the <body> tag. 
+    You can use this class: "primary-color-white", "primary-color-red", "primary-color-orange", "primary-color-blue", "primary-color-aqua", "primary-color-dark" 
+    -->
+    
+    <!--
+    Each element is able to have its own background or text color. Just change the class of the element.  
+    You can use this class: 
+    "background-white", "background-red", "background-orange", "background-blue", "background-aqua", "background-primary" 
+    "text-white", "text-red", "text-orange", "text-blue", "text-aqua", "text-primary"
+    -->
+<body class="size-1520 primary-color-red background-dark">
+
+      <!-- HEADER -->
+<!DOCTYPE html>
+
+<!-- HEADER -->
+      <header class="grid">
+        <!-- Top Navigation -->
+        <nav class="s-12 grid background-red background-primary-hightlight">
+           <!-- logo -->
+
+           
+           <div class="top-nav s-12 l-9">
+			    <ul class="top-ul left chevron">
+                <li> <a href="index.html">Home</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="projects.html">Research</a></li>
+				<li><a href="phd.html">PhD</a></li>
+<!--				<li><a href="research.html">Research</a></li>-->
+				<li><a href="resources.html">Resources</a></li>
+				<li><a href="tools.html">Tools</a></li>
+<!--				<li><a href="news.html">News</a></li>-->
+                <li><a href="contact.html">Contact</a></li>
+             </ul>
+				<li>      <div class="button-container">
+            <button onclick="toggleBackground()">Dark/Light</button>
+        </div></li>
+
+          </div>
+        </nav>
+					       
+		  
+		 
+
+		
+		<script>
+    function setBackgroundColor(backgroundColor, textColor) {
+        document.body.style.backgroundColor = backgroundColor;
+        document.body.style.color = textColor;
+    }
+</script>
+	
+      </header>
+	  
+	  
+    <script>
+        // Fetch the content of header.html using JavaScript
+        fetch('header.html')
+            .then(response => response.text())
+            .then(content => {
+                // Add the content to the header-container div
+                document.getElementById('header-container').innerHTML = content;
+            })
+            .catch(error => {
+                console.error('Error fetching header.html:', error);
+            });
+    </script>
+      
+	      <!-- A button to toggle between light and dark backgrounds -->
+
+<!--
+    You can change the color scheme of the page. Just change the class of the <body> tag. 
+    You can use this class: "primary-color-white", "primary-color-red", "primary-color-orange", "primary-color-blue", "primary-color-aqua", "primary-color-dark" 
+    -->
+    
+    <!--
+    Each element is able to have its own background or text color. Just change the class of the element.  
+    You can use this class: 
+    "background-white", "background-red", "background-orange", "background-blue", "background-aqua", "background-primary" 
+    "text-white", "text-red", "text-orange", "text-blue", "text-aqua", "text-primary"
+    -->
+
+    <script>
+        // Fetch the content of header.html using JavaScript
+        fetch('header.html')
+            .then(response => response.text())
+            .then(content => {
+                // Add the content to the header-container div
+                document.getElementById('header-container').innerHTML = content;
+            })
+            .catch(error => {
+                console.error('Error fetching header.html:', error);
+            });
+    </script>
+      
+	       <!-- The JavaScript code to tuggle background light/dark -->
+  <script>
+    function toggleBackground() {
+        var body = document.body;
+        var currentClass = body.className;
+        var headingElements = [];
+
+        // Get all heading elements (h1, h2, h3, h4, etc.)
+        for (var i = 2; i <= 1; i++) {
+            headingElements = headingElements.concat(Array.from(document.getElementsByTagName('h' + i)));
+        }
+
+        if (currentClass.includes("background-dark")) {
+            body.className = currentClass.replace("background-dark", "background-light");
+            body.style.backgroundColor = "#f0f0f0";
+            body.style.color = "#333";
+
+     
+
+            for (var i = 0; i < headingElements.length; i++) {
+                headingElements[i].classList.replace("text-white", "text-dark");
+                headingElements[i].style.color = "#f0f0f0";
+            }
+        } else if (currentClass.includes("background-light")) {
+            body.className = currentClass.replace("background-light", "background-dark");
+            body.style.backgroundColor = "#333";
+            body.style.color = "#fff";
+
+            for (var i = 0; i < pElements.length; i++) {
+                pElements[i].classList.replace("text-dark", "text-white");
+                pElements[i].style.color = "#333";
+            }
+
+            for (var i = 0; i < headingElements.length; i++) {
+                headingElements[i].classList.replace("text-dark", "text-white");
+                headingElements[i].style.color = "#333";
+            }
+        }
+    }
+</script>
+      <!-- MAIN -->
+      <main role="main">
+        <!-- TOP SECTION -->
+		  
+        <section class="grid">
+          <!-- Main Carousel -->
+			
+          <div class="s-12 margin-bottom carousel-fade-transition owl-carousel carousel-main carousel-nav-white carousel-hide-arrows background-dark">
+          	<div class="item background-image" style="background-image:url(img/library.jpg)">
+              <p class="text-padding text-strong text-white text-s-size-30 text-size-60 text-uppercase background-primary">Welcome to UCREL NLP Group</p><br>
+              <p class="text-padding text-size-20 text-dark text-uppercase background-white">Unleashing the Power of Language: Join the NLP Revolution at UCREL!</p>
+            </div>
+          	<div class="item background-image" style="background-image:url(img/alex1.jpg)">
+              <p class="text-padding text-strong text-white text-s-size-30 text-size-60 text-uppercase background-primary">Exploring Languages</p><br>
+              <p class="text-padding text-size-20 text-dark text-uppercase background-white">Words that Shape Worlds: Exploring Language with UCREL NLP Group.</p>
+            </div>
+            <div class="item background-image" style="background-image:url(img/castle.jpg)">
+              <p class="text-padding text-strong text-white text-s-size-30 text-size-60 text-uppercase background-primary">Language Frontiers</p><br>
+              <p class="text-padding text-size-20 text-dark text-uppercase background-white">Building Bridges of Understanding: UCREL NLP Group Explores Language Frontiers.</p>
+            </div>
+          </div>  
+        </section>
+        
+        <!-- SECTION 1 --> 
+        <section class="grid margin text-center">
+          <a href="about-us.html" class="s-12 m-6 l-3 padding-2x vertical-center margin-bottom background-red">
+            <i class="icon-sli-share text-size-60 text-white center margin-bottom-15"></i>
+            <h3 class="text-strong text-size-20 text-line-height-1 margin-bottom-30 text-uppercase">UCREL NLP Team</h3>
+          </a>
+          <a href="projects.html" class="s-12 m-6 l-3 padding-2x vertical-center margin-bottom background-blue">
+            <i class="icon-sli-layers text-size-60 text-white center margin-bottom-15"></i>
+            <h3 class="text-strong text-size-20 text-line-height-1 margin-bottom-30 text-uppercase">Our Research Projects&nbsp;</h3>
+          </a>
+          
+          <!-- Image-->
+          <img class="m-12 l-6 l-row-2 margin-bottom" src="img/img-06.jpg">
+          
+          <a href="phd.html" class="s-12 m-6 l-3 padding-2x vertical-center margin-bottom background-orange">
+            <i class="icon-sli-diamond text-size-60 text-white center margin-bottom-15"></i>
+            <h3 class="text-strong text-size-20 text-line-height-1 margin-bottom-30 text-uppercase">Apply for a PhD&nbsp;</h3>
+          </a>
+          <a href="resources.html" class="s-12 m-6 l-3 padding-2x vertical-center margin-bottom background-aqua">
+            <i class="icon-sli-equalizer text-size-60 text-white center margin-bottom-15"></i>
+            <h3 class="text-strong text-size-20 text-line-height-1 margin-bottom-30 text-uppercase">NLP Tool &amp;&nbsp; Resources&nbsp;</h3>
+          </a>
+        </section>
+        
+        <!-- SECTION 2 -->
+        
+        <!-- SECTION 3 --> 
+        <section class="grid margin">
+          <!-- Image-->
+        </section>
+        
+        <!-- SECTION 4 -->
+        
+        <section class="grid margin">
+          <a class="s-12 m-6 margin-bottom" href="gallery.html">
+          </a>	
+          <a class="s-12 m-6 margin-bottom" href="gallery.html">
+          </a>	
+          <a class="s-12 m-6 margin-bottom" href="gallery.html">
+          </a>	
+          <a class="s-12 m-6 margin-bottom" href="gallery.html">
+          </a>	
+        </section>
+        
+        <!-- SECTION 5 -->
+        <section class="grid margin text-center">
+          <div class="m-12 l-4 padding-2x background-dark margin-bottom text-right">
+            <h3 class="text-strong text-size-25 text-uppercase margin-bottom-10">Find us on Social Media</h3>
+             
+          </div>
+<a href="https://twitter.com/UCREL_NLP" class="s-12 m-6 l-2 padding vertical-center margin-bottom twitter hover-zoom">
+      <i class="icon-sli-social-twitter text-size-60 text-white center"></i>
+    </a>
+          <a href="https://www.youtube.com/@ucrelcrs8222" class="s-12 m-6 l-2 padding vertical-center margin-bottom youtube hover-zoom">
+            <i class="icon-sli-social-youtube text-size-60 text-white center"></i>
+          </a>
+        </section>
+                
+      </main>
+      
+<div id="footer-container"></div>
+
+    <script>
+        // Fetch the content of header.html using JavaScript
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(content => {
+                // Add the content to the header-container div
+                document.getElementById('footer-container').innerHTML = content;
+            })
+            .catch(error => {
+                console.error('Error fetching footer.html:', error);
+            });
+    </script>
+
+	  <script type="text/javascript" src="js/responsee.js"></script>
+      <script type="text/javascript" src="owl-carousel/owl.carousel.js"></script>
+      <script type="text/javascript" src="js/template-scripts.js"></script>
+	
+   </body>
+</html>

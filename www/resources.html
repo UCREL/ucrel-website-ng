@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en-US">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+       <title>UCREL NLP Group</title>
+  <!-- Favicons -- We recommend this site for generating favicons: https://www.favicon-generator.org/ -->
+  <link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="favicons/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="favicons/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="favicons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="favicons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="favicons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="favicons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="512x512"  href="favicons/android-chrome-512x512.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicons/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="favicons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+	   
+	   
+      <link rel="stylesheet" href="css/components.css">
+      <link rel="stylesheet" href="css/icons.css">
+      <link rel="stylesheet" href="css/responsee.css">
+      <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+      <link rel="stylesheet" href="owl-carousel/owl.theme.css">
+      <!-- CUSTOM STYLE -->      
+      <link rel="stylesheet" href="css/template-style.css">
+      <link href="https://fonts.googleapis.com/css?family=Barlow:100,300,400,700,800&amp;subset=latin-ext" rel="stylesheet">  
+      <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+      <script type="text/javascript" src="js/jquery-ui.min.js"></script>   
+   
+	   
+	       <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1.5fr);
+            gap: 20px;
+            padding: 20px;
+        }
+        .project-box {
+            background-color: indianred;
+            padding: 20px;
+            text-align: center;
+        }
+        .project-box h3 {
+            color: white;
+        }
+			   
+        .project-box h4 {
+            color: white;
+        }			   
+    </style>
+   </head>
+	
+<!-- HEADER -->
+      <header class="grid">
+        <!-- Top Navigation -->
+        <nav class="s-12 grid background-red background-primary-hightlight">
+           <!-- logo -->
+
+           
+           <div class="top-nav s-12 l-9">
+			    <ul class="top-ul left chevron">
+                <li> <a href="index.html">Home</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="projects.html">Research</a></li>
+				<li><a href="phd.html">PhD</a></li>
+<!--				<li><a href="research.html">Research</a></li>-->
+				<li><a href="resources.html">Resources</a></li>
+				<li><a href="tools.html">Tools</a></li>
+<!--				<li><a href="news.html">News</a></li>-->
+                <li><a href="contact.html">Contact</a></li>				     
+
+             </ul>
+      <!-- ... (rest of your code) ... -->
+  
+			   
+          </div>
+        </nav>
+
+		<script>
+    function setBackgroundColor(backgroundColor, textColor) {
+        document.body.style.backgroundColor = backgroundColor;
+        document.body.style.color = textColor;
+    }
+</script>
+	
+      </header>
+	  
+	  
+
+
+
+   <body class="size-1520 primary-color-red background-dark">
+    
+        <!-- The JavaScript code to tuggle background light/dark -->
+  <script>
+    function toggleBackground() {
+        var body = document.body;
+        var currentClass = body.className;
+        var pElements = document.getElementsByTagName('p');
+        var headingElements = [];
+
+        // Get all heading elements (h1, h2, h3, h4, etc.)
+        for (var i = 1; i <= 2; i++) {
+            headingElements = headingElements.concat(Array.from(document.getElementsByTagName('h' + i)));
+        }
+
+        if (currentClass.includes("background-dark")) {
+            body.className = currentClass.replace("background-dark", "background-light");
+            body.style.backgroundColor = "#f0f0f0";
+            body.style.color = "#333";
+
+            for (var i = 0; i < pElements.length; i++) {
+                pElements[i].classList.replace("text-white", "text-dark");
+                pElements[i].style.color = "#f0f0f0";
+            }
+
+            for (var i = 0; i < headingElements.length; i++) {
+                headingElements[i].classList.replace("text-white", "text-dark");
+                headingElements[i].style.color = "#f0f0f0";
+            }
+        } else if (currentClass.includes("background-light")) {
+            body.className = currentClass.replace("background-light", "background-dark");
+            body.style.backgroundColor = "#333";
+            body.style.color = "#fff";
+
+  
+
+            for (var i = 0; i < headingElements.length; i++) {
+                headingElements[i].classList.replace("text-dark", "text-white");
+                headingElements[i].style.color = "#333";
+            }
+        }
+    }
+</script>
+      <!-- MAIN -->
+      <main role="main">
+        <!-- TOP SECTION -->
+        <header class="grid">
+        	<div class="logo s-4 l-3"> <!-- Decreased the size of the logo for both small and large screens -->
+      		<a href="index.html">
+        	<img src="img/ucrel_logo_2021.png" alt="Logo" style="max-width: 170px; max-height: 110px;">
+      		</a>
+			 <button onclick="toggleBackground()">Dark/Light</button>
+    		</div>
+			<div class="s-12 padding-2x">
+            <h1 class="text-strong text-white text-center center text-size-60 margin-bottom-20">Resources and Datasets</h1>
+            <h2 class="text-size-20 text-white text-center center">A list of free resources and datasets provided to you by UCREL NLP</h2>
+    
+			
+			
+			<div class="grid-container">
+    <!-- Row 1 -->
+    <div class="project-box" id="box1">
+        <a href="http://ucrel-web.lancaster.ac.uk/habibi/">
+            <h3>Habibi</h3>
+            <h4>Arabic Song Lyrics</h4>
+        </a>
+    </div>
+    <div class="project-box" id="box2">
+        <a href="http://sourceforge.net/projects/kalimat/files/?source=navbar">
+            <h3>KALIMAT</h3>
+            <h4>Arabic NLP Dataset</h4>
+        </a>
+    </div>
+    <div class="project-box" id="box3">
+        <a href="https://sourceforge.net/projects/easc-corpus/">
+            <h3>EASC</h3>
+            <h4>Essex Arabic Summaries Corpus</h4>
+        </a>
+    </div>
+    <div class="project-box" id="box4">
+        <a href="https://docs.google.com/uc?id=0B31rakzMfTMZRTZiM29UR3VxYmc&export=download">
+            <h3>MultiLing</h3>
+            <h4>Multi-document Summaries Corpora</h4>
+        </a>
+    </div>
+    <div class="project-box" id="box5">
+        <a href="https://sourceforge.net/projects/arabic-business-copora/">
+            <h3>ABMC</h3>
+            <h4>Arabic in Business and Management Corpora</h4>
+        </a>
+    </div>
+				
+				 <!-- Row 1 -->
+    <div class="project-box" id="box6">
+        <a href="https://www.lancaster.ac.uk/staff/elhaj/corpora_files/ArabicDialectsDataset.zip">
+            <h3>ADD</h3>
+            <h4>Arabic Dialects Dataset</h4>
+        </a>
+    </div>
+    <div class="project-box" id="box7">
+        <a href="https://www.research.lancs.ac.uk/portal/en/datasets/annual-reports-key-sections-corpora-2003-to-2017(ee12c021-eddd-4258-a682-8daf3e4bbe90).html">
+            <h3>Annual Reports Corpus</h3>
+            <h4>UK Annual REports Key Sections Corpora</h4>
+        </a>
+    </div>
+    <div class="project-box" id="box8">
+        <a href="https://www.research.lancs.ac.uk/portal/en/datasets/ngram-list-for-the-stratscore-metric(7edf3aab-ef14-4545-9e29-b31186ba6a32).html">
+            <h3>StratScore</h3>
+            <h4>N-gram list for UK annual report sections</h4>
+        </a>
+    </div>
+    <div class="project-box" id="box9">
+        <a href="https://www.research.lancs.ac.uk/portal/en/datasets/strategic-commentary(d3e44066-4315-4f4d-9be7-bcab4296650d).html">
+            <h3>Strategic Commentary Corpus</h3>
+            <h4>A corpus of UK Annual Reprots Strategic Commentary</h4>
+        </a>
+    </div>
+    <div class="project-box" id="box10">
+        <a href="https://www.research.lancs.ac.uk/portal/en/datasets/arabic-infectious-disease-ontology(39dbef60-ae9b-4405-99c8-35a41e95a3e0).html">
+            <h3>Arabic Diseases Ontology</h3>
+            <h4>Arabic Infectious Diseas Ontology</h4>
+        </a>
+    </div>
+				
+				 <!-- Row 1 -->
+    <div class="project-box" id="box11">
+        <a href="https://www.research.lancs.ac.uk/portal/en/datasets/arabic-tweets-about-infectious-diseases(68b307a8-510b-42f6-93af-f0cc7d9a75a1).html">
+            <h3>Arabic Infectious Diseases Corpus</h3>
+            <h4>A corpus of Arabic Tweets about Infectious Diseases</h4>
+        </a>
+    </div>
+    <div class="project-box" id="box12">
+        <a href="https://ucrel.lancs.ac.uk/cfie/">
+            <h3>CFIE</h3>
+            <h4>2012 - 2020</h4>
+        </a>
+    </div>
+
+    <div class="project-box" id="box14">
+    <a href="https://www.research.lancs.ac.uk/portal/en/datasets/corpus-of-urdu-news-text-reuse-counter(5b0be889-e0eb-4a9c-8441-d6723ecfb617).html">
+        <h3>COUNTER Urdu Corpus</h3>
+        <h4>COrpus of Urdu News TExt Reuse</h4>
+    </a>
+</div>
+    <div class="project-box" id="box15">
+        <a href="https://ucrel.lancs.ac.uk/vard/about/">
+            <h3>Vard</h3>
+            <h4>2013 - 2015</h4>
+        </a>
+    </div>
+				
+				    <div class="project-box" id="box16">
+        <a href="https://www.research.lancs.ac.uk/portal/en/datasets/covid19-arabic-tweets(400f5a2a-a34e-4d3b-a72d-48c2d0df0513).html">
+            <h3>Arabic COVID Corpus</h3>
+            <h4>Covid-19 Arabic Tweets</h4>
+        </a>
+    </div>
+				
+			<div class="project-box" id="box17">
+			<a href="https://www.research.lancs.ac.uk/portal/en/datasets/crosslanguage-englishurdu-corpus-cleu(49d9ced1-3b5b-4f60-b0d8-faac7514a848).html">
+			<h3>CLEU Urdu Corpus</h3>
+			<h4>Cross-Language English-Urdu Corpus</h4>
+			</a>
+			</div>
+
+			<div class="project-box" id="box18">
+			<a href="https://www.research.lancs.ac.uk/portal/en/datasets/data-and-scripts-for-extracting-plant-names-and-collocates-from-historical-texts(ddb0c5fe-f143-4cef-b7d1-908e8b5b561e).html">
+			<h3>Plant Names and Historical Places</h3>
+			<h4>Data and scripts for extracting plant names and collocates from historical texts</h4>
+			</a>
+			</div>
+				
+			<div class="project-box" id="box19">
+			<a href="https://www.research.lancs.ac.uk/portal/en/datasets/crosslanguage-englishurdu-corpus-cleu(49d9ced1-3b5b-4f60-b0d8-faac7514a848).html">
+			<h3>CLEU Urdu Corpus</h3>
+			<h4>Cross-Language English-Urdu Corpus</h4>
+			</a>
+			</div>
+
+			<div class="project-box" id="box20">
+			<a href="https://www.research.lancs.ac.uk/portal/en/datasets/human-judgements-of-sentiment-values(9611bb66-0101-4751-bf6a-ee1c55aff07d).html">
+			<h3>Human Judgements</h3>
+			<h4>Human Judgements of Sentiment Values</h4>
+			</a>
+			</div>
+				
+				
+			<div class="project-box" id="box21">
+			<a href="https://www.research.lancs.ac.uk/portal/en/datasets/igboenglish-machine-translation-an-evaluation-benchmark(b2d87fb1-c9d2-4840-8de4-f52d4e2045da).html">
+			<h3>Igbo Translations</h3>
+			<h4>Igbo-English Machine Translations</h4>
+			</a>
+			</div>
+
+			<div class="project-box" id="box22">
+			<a href="https://www.research.lancs.ac.uk/portal/en/datasets/influenza-and-covid19-arabic-labeled-tweets(ff9222a0-eb68-4fa4-9171-4a186de6c14c).html">
+			<h3>Arabic Influenza and Covid</h3>
+			<h4>Influenza and Covid-19 Arabic labeled Tweets</h4>
+			</a>
+			</div>
+				
+			<div class="project-box" id="box23">
+			<a href="https://www.research.lancs.ac.uk/portal/en/datasets/selfreported-bd-diagnosis-sbidd-dataset(2907ebd6-ac19-48e8-a170-e360e98d5ec5).html">
+			<h3>S-BiDD</h3>
+			<h4>Self-reported BD diagnosis dataset</h4>
+			</a>
+			</div>
+</div>
+      </div>
+<!-- Rest of your content -->
+
+
+        </header>
+      
+        <section class="grid margin"> </section>
+        
+      </main>
+     
+	  
+<div id="footer-container"></div>
+
+    <script>
+        // Fetch the content of header.html using JavaScript
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(content => {
+                // Add the content to the header-container div
+                document.getElementById('footer-container').innerHTML = content;
+            })
+            .catch(error => {
+                console.error('Error fetching footer.html:', error);
+            });
+    </script>
+   </body>
+	  <script type="text/javascript" src="js/responsee.js"></script>
+      <script type="text/javascript" src="owl-carousel/owl.carousel.js"></script>
+      <script type="text/javascript" src="js/template-scripts.js"></script>
+	
+</html>
